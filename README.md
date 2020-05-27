@@ -19,3 +19,4 @@ The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More detail
 # 参考文献
 - [WSL Ubuntu18.04にJavaをインストールする]( https://qiita.com/Jazuma/items/8025714508a9ad382942 )
 - [VSCodeでJavaの開発環境構築する方法]( https://qiita.com/takuma-jpn/items/b49785a314fb4db85775 )
+- [VSCodeでJavaプログラミングを始めてみるメモ(2020-04版)]( https://qiita.com/msakamoto_sf/items/d65947ddf509acbc98cb )
