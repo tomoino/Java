@@ -15,3 +15,7 @@ The workspace contains two folders by default, where:
 ## Dependency Management
 
 The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+
+# 参考文献
+- [WSL Ubuntu18.04にJavaをインストールする]( https://qiita.com/Jazuma/items/8025714508a9ad382942 )
+- [VSCodeでJavaの開発環境構築する方法]( https://qiita.com/takuma-jpn/items/b49785a314fb4db85775 )
