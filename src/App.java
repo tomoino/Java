@@ -24,7 +24,7 @@ public class App {
 
         /* 各種関数 */
         System.out.println("Hello, World!"); // 標準出力、改行される
-        System.out.print("Hello!\n") // 改行されない
+        System.out.print("Hello!\n"); // 改行されない
         String input = new java.util.Scanner(System.in).nextLine(); //1行の文字列入力を受け取る
         int inputInt = new java.util.Scanner(System.in).nextInt(); //1行の整数入力を受け取る
 
