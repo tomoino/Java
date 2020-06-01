@@ -1,6 +1,6 @@
 public class App {
     /* mainメソッド */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {　// argsはコマンドライン引数。半角区切りで文字列の配列が入る。
         /* 変数：変数の寿命はブロックが終了するまで。 */
         /* 整数 */
         long bigInt = 100000000L; // long型は最後にLを付ける
@@ -13,9 +13,9 @@ public class App {
         /* その他 */
         boolean exists = true;
         char gender = '男'; // charは引用符
-        String hanzi = "漢字"; // Stringは二重引用符
-        int strLen = hanzi.length(); // length()を付けると文字数を取得できる
-        
+        String name = "Tomoino"; // Stringは二重引用符
+        int nameLen = name.length(); // length()を付けると文字数を取得できる
+
         /* 定数: finalをつける */
         final double TAX = 1.10;
 
@@ -47,7 +47,7 @@ public class App {
         int[] arr; // 型名[]で宣言。int型の配列がメモリ上に作成
         // arr = new int[5]; // int型の要素を5個作成する。
         // arr = new int[5][10]; // 多次元配列も生成できる。
-        arr = new int[] { 0, 1, 2, 3, 4}; // 配列の初期化。arrには配列の先頭要素のアドレスが代入される。
+        arr = new int[] { 0, 1, 2, 3, 4 }; // 配列の初期化。arrには配列の先頭要素のアドレスが代入される。
         System.out.println(arr.length); // 配列の長さ
         for (int value : arr) { // 配列の要素を順に取り出すときの書き方
             System.out.println(value);
@@ -61,5 +61,32 @@ public class App {
             nullを代入すると参照型の変数はどこも参照していない状態になる。
         */
 
+        // メソッドの呼び出し thisはいらない
+        hello(name);
+        int addition = add(1, 2);
+
     }
+    
+    public static void hello(String name) {
+        System.out.println('Hello, ' + name);
+    }
+
+    public static int add(int x, int y) {
+        return x + y;
+    }
+
+    // オーバーロード（同じ名前のメソッドの定義）：仮引数の型や数が異なれば同じ名前のメソッドを複数定義できる。
+    public static double add(double x, double y) {
+        return x + y;
+    }
+
+    // 配列も渡せる。アドレスがわたされる。
+    public static int add(int[] arr) {
+        int result = 0
+        for (int value: arr) {
+            result += value;
+        }
+        return result;
+    }
+}
 }
