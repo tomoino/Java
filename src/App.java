@@ -1,6 +1,6 @@
 public class App {
     /* mainメソッド */
-    public static void main(String[] args) throws Exception {　// argsはコマンドライン引数。半角区切りで文字列の配列が入る。
+    public static void main(String[] args) throws Exception { // argsはコマンドライン引数。半角区切りで文字列の配列が入る。
         /* 変数：変数の寿命はブロックが終了するまで。 */
         /* 整数 */
         long bigInt = 100000000L; // long型は最後にLを付ける
@@ -68,7 +68,7 @@ public class App {
     }
     
     public static void hello(String name) {
-        System.out.println('Hello, ' + name);
+        System.out.println("Hello, " + name);
     }
 
     public static int add(int x, int y) {
@@ -82,11 +82,10 @@ public class App {
 
     // 配列も渡せる。アドレスがわたされる。
     public static int add(int[] arr) {
-        int result = 0
+        int result = 0;
         for (int value: arr) {
             result += value;
         }
         return result;
     }
-}
 }
