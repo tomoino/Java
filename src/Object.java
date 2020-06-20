@@ -23,4 +23,9 @@ public class Object {
     void incValue() {
         this.value++;
     }
+
+    // 静的メソッド：静的メソッド内では静的メンバしか使えない。
+    static void printObjectNum() {
+        System.out.println(Object.objectNum);
+    }
 }
