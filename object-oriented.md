@@ -99,3 +99,23 @@ public abstract void count();
 ### 抽象クラス
 classの前にabstractを付ける。newによるインスタンス化ができなくなる。
 抽象クラスを継承した場合、抽象メソッドをオーバーライドするか、抽象クラスにしないとエラーが出る。
+```Java
+public abstract class AbstractObject() {
+    public abstract void count(); 
+    ...
+} 
+```
+## インターフェース
+継承階層をうえにたどっていくとどんどん抽象的になっていき、持っている抽象メソッドやフィールドが減っていく。
+インターフェースとは抽象クラスの中でも以下の条件を満たす特に抽象度の高いものを指す。
+* 全てのメソッドが抽象メソッド
+* 基本的にフィールドを一つも持たない
+```Java
+public interface class InterfaceObject() {
+    void count(); // public abstractを省略できる 
+    double PI = 3.14; // フィールドは基本使えないが、public static finalは例外
+    ...
+} 
+```
+インターフェースを継承する場合はextendsではなく、implementsを使う。
+インターフェースは子クラスでオーバーライドしなければ使えないという性質があるので、クラスと違い多重継承できる。
