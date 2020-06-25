@@ -119,3 +119,12 @@ public interface class InterfaceObject() {
 ```
 インターフェースを継承する場合はextendsではなく、implementsを使う。
 インターフェースは子クラスでオーバーライドしなければ使えないという性質があるので、クラスと違い多重継承できる。
+
+# 多態性
+* あるものをあえてざっくり似たようなものと捉えることでさまざまな機能を共有できる機能。
+* 多態性には専用の文法はない。代入で変数の型を抽象クラスやインターフェースにして、より具体的なクラスをnewする。
+* 下の例でいえば、Object is-a AbstractObjectの関係があるため型が違っても代入できる。
+```Java
+AbstractObject obj = new Object();
+```
+* is-aの関係はextendsやimplementsによって作られる。
